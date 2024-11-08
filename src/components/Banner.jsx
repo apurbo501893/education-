@@ -50,7 +50,7 @@ const Banner = () => {
             <img src={starImg} alt="starImg" width={200} height={200} />
           </div>
         </div>
-        <div>
+        <div className="flex justify-center items-center">
           <img
             src={bannerImg}
             alt="bannerImg"
@@ -76,7 +76,7 @@ const Banner = () => {
           <div className="flex items-center  justify-center">
             <LiaCertificateSolid className="text-5xl fill-[#f66962] " />
           </div>
-          <div>
+          <div className="flex flex-col items-center  justify-center md:items-start">
             <h2 className="text-4xl font-bold">
               <CountUp end={186} duration={3} delay={2} />
               <span>+</span>
@@ -100,7 +100,7 @@ const Banner = () => {
           <div className="flex items-center  justify-center">
             <GrCertificate className="text-5xl fill-[#f66962] " />
           </div>
-          <div>
+          <div className="flex flex-col items-center  justify-center md:items-start">
             <h2 className="text-4xl font-bold">
               <CountUp end={5} duration={3} delay={1} />K<span>+</span>
             </h2>

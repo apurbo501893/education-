@@ -1,6 +1,8 @@
 import Banner from "./components/Banner";
 import Favourite from "./components/Favourite";
 
+import What from "./components/What";
+
 function App() {
   const navigation = [
     { title: "Home", link: "/" },
@@ -26,8 +28,9 @@ function App() {
           </div>
         </div>
         <Banner />
+        <Favourite />
+        <What />
       </main>
-      <Favourite />
     </>
   );
 }
