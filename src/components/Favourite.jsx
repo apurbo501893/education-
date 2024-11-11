@@ -1,65 +1,48 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import nodeImg from "../assets/icon-02.png";
 import AngularImg from "../assets/icon.png";
 import dockerImg from "../assets/icon01.png";
 import bootstrapImg from "../assets/icon04.png";
 import getImg from "../assets/icon-03.png";
 const Favourite = () => {
-  const [dotActive, setDotActive] = useState(0);
   const settings = {
     dots: true,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
+    speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
-    arrows: false,
-
-    beforeChange: (prev, next) => {
-      setDotActive(next);
-    },
-    appedDots: (dots) => (
-      <div
-        style={{
-          position: "absolute",
-          bottom: 30,
-          left: "50%",
-          transform: "translateX(-50%)",
-        }}
-      >
-        <ul
-          style={{
-            margin: "0px",
-            display: "flex",
-            alignItems: "center",
-            gap: "10px",
-          }}
-        ></ul>
-      </div>
-    ),
-    customPaging: (i) => (
-      <div
-        style={
-          i === dotActive
-            ? {
-                width: "50px",
-                height: "15px",
-                borderRadius: "20px",
-                cursor: "pointer",
-                backgroundColor: "#ff5f6b",
-              }
-            : {
-                width: "15px",
-                height: "15px",
-                backgroundColor: "#ccc",
-                borderRadius: "50%",
-                cursor: "pointer",
-              }
-        }
-      />
-    ),
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   const courseData = [
     { title: "Angular", name: "4 Courses", img: AngularImg },
