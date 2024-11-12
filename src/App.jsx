@@ -1,6 +1,7 @@
 import Banner from "./components/Banner";
 import Favourite from "./components/Favourite";
 import Featured from "./components/Featured";
+import Instructor from "./components/Instructor";
 import Trade from "./components/Trade";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Favourite />
         <Featured />
         <Trade />
+        <Instructor />
       </main>
     </>
   );
