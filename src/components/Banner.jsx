@@ -61,7 +61,7 @@ const Banner = () => {
         </div>
       </section>
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-4 h-32 mt-4 gap-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center box-shadow-lg border border-indigo-400 p-4 rounded-lg bg-white translate-y-0 hover:-translate-y-4 duration-300 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center box-shadow-lg  p-4 rounded-lg bg-white translate-y-0 hover:-translate-y-4 duration-300 ">
           <div className="flex items-center  justify-center">
             <FaPencilRuler className="text-5xl fill-[#f66962] " />
           </div>
@@ -72,7 +72,7 @@ const Banner = () => {
             <p className="text-sm">Online Course</p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center box-shadow-lg p-4 rounded-lg bg-white translate-y-0 hover:-translate-y-4 duration-300 border border-indigo-400">
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center box-shadow-lg p-4 rounded-lg bg-white translate-y-0 hover:-translate-y-4 duration-300">
           <div className="flex items-center  justify-center">
             <LiaCertificateSolid className="text-5xl fill-[#f66962] " />
           </div>
@@ -84,7 +84,7 @@ const Banner = () => {
             <p className="text-sm">Expert Tutors</p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center box-shadow-lg p-4 rounded-lg bg-white translate-y-0 hover:-translate-y-4 duration-300 border border-indigo-400">
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center box-shadow-lg p-4 rounded-lg bg-white translate-y-0 hover:-translate-y-4 duration-300 ">
           <div className="flex items-center  justify-center">
             <PiStudent className="text-5xl fill-[#f66962] " />
           </div>
@@ -96,7 +96,7 @@ const Banner = () => {
             <p className="text-sm">Online Student</p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center box-shadow-lg p-4 rounded-lg bg-white translate-y-0 hover:-translate-y-4 duration-300 border border-indigo-400">
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center box-shadow-lg p-4 rounded-lg bg-white translate-y-0 hover:-translate-y-4 duration-300 ">
           <div className="flex items-center  justify-center">
             <GrCertificate className="text-5xl fill-[#f66962] " />
           </div>

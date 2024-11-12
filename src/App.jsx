@@ -1,6 +1,7 @@
 import Banner from "./components/Banner";
 import Favourite from "./components/Favourite";
 import Featured from "./components/Featured";
+import Trade from "./components/Trade";
 
 function App() {
   const navigation = [
@@ -29,6 +30,7 @@ function App() {
         <Banner />
         <Favourite />
         <Featured />
+        <Trade />
       </main>
     </>
   );
